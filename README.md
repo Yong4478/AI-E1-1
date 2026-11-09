@@ -15,8 +15,11 @@ IDE: Visual Studio Code
 
 <img width="3840" height="2160" alt="스크린샷(3)" src="https://github.com/user-attachments/assets/1c5c17ba-4dc7-49a9-83d9-236c2c8552c0" />
 
-3. 트러블슈팅 (Troubleshooting)
+
+트러블슈팅 (Troubleshooting)
+
 1. 인증 및 권한 오류 (Authentication Failed)
+
 문제 상황: 코드를 GitHub에 올리려고(Push) 할 때, "권한이 없습니다(403 Forbidden)" 또는 "로그인 정보가 잘못되었습니다"라는 메시지가 뜨며 전송이 실패하는 경우입니다.
 
 원인: GitHub 계정의 비밀번호가 바뀌었거나, Visual Studio에 저장된 인증 토큰(Token)이 만료되었을 때 발생합니다.
