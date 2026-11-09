@@ -16,15 +16,25 @@ IDE: Visual Studio Code
 <img width="3840" height="2160" alt="스크린샷(3)" src="https://github.com/user-attachments/assets/1c5c17ba-4dc7-49a9-83d9-236c2c8552c0" />
 
 3. 트러블슈팅 (Troubleshooting)
-🔴 Case 1: 터미널에서 파이썬 명령어 인식 불가 오류
+1. 인증 및 권한 오류 (Authentication Failed)
+문제 상황: 코드를 GitHub에 올리려고(Push) 할 때, "권한이 없습니다(403 Forbidden)" 또는 "로그인 정보가 잘못되었습니다"라는 메시지가 뜨며 전송이 실패하는 경우입니다.
 
-증상 (Issue):
-VS Code 터미널에서 python main.py 실행 시, " 'python' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다 " 라는 오류 발생.
-원인 (Cause):
-윈도우 환경 변수(PATH)에 파이썬 실행 경로가 등록되지 않아, 시스템이 python 명령어를 찾지 못함.
-해결 (Solution):
-파이썬 설치 파일을 다시 실행하여, 하단의 Add python.exe to PATH 옵션을 체크한 뒤 설치를 진행함. 이후 VS Code를 완전히 재시작하여 변경된 환경 변수를 적용함.
-🔴 Case 2: "No installed Python found!" 오류
+원인: GitHub 계정의 비밀번호가 바뀌었거나, Visual Studio에 저장된 인증 토큰(Token)이 만료되었을 때 발생합니다.
+해결 방안:
+계정 재연동: Visual Studio 오른쪽 상단의 [계정 아이콘]을 클릭하여 GitHub 계정을 로그아웃했다가 다시 로그인합니다.
+자격 증명 관리자 수정:
+Windows 검색창에 '자격 증명 관리자' 입력 후 실행.
+[Windows 자격 증명] 탭에서 git:https://github.com 항목을 찾아 제거합니다.
+Visual Studio에서 다시 Push를 시도하면 새로운 로그인 창이 뜨며 인증을 갱신할 수 있습니다.
+2. 병합 충돌 발생 (Merge Conflict)
+문제 상황: GitHub 서버에 있는 코드와 내 컴퓨터의 코드가 같은 줄을 서로 다르게 수정했을 때, "충돌로 인해 Pull/Push를 완료할 수 없습니다"라는 메시지가 뜨는 경우입니다.
+
+원인: 협업 중이거나 다른 기기에서 작업한 내용을 반영하지 않은 상태에서 동일한 파일을 수정했을 때 발생합니다.
+해결 방안 (Visual Studio 내장 도구 활용):
+충돌 파일 확인: [Git 변경 내용] 창에 '충돌' 상태로 표시된 파일을 더블 클릭합니다.
+병합 편집기 사용: Visual Studio가 제공하는 '병합 편집기(Merge Editor)' 화면이 열립니다.
+코드 선택: 왼쪽(서버 코드)과 오른쪽(내 코드) 중 어떤 것을 반영할지 체크박스로 선택하거나, 하단의 결과 창에서 직접 코드를 수정합니다.
+병합 수락: 수정이 완료되면 [병합 수락] 버튼을 누르고 커밋(Commit)하여 충돌을 마무리합니다.
 
 증상 (Issue):
 명령어 실행 시 설치된 파이썬을 찾을 수 없다는 메시지 출력.
