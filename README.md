@@ -1,5 +1,3 @@
-# AI-E1-1
-
 📋 [보고서] 퀴즈 게임 개발 및 실행 환경 구축 결과
 1. 개발 및 실행 환경 (Environment)
 OS: Windows
@@ -10,8 +8,8 @@ IDE: Visual Studio Code
 2. 환경 설정 검증 (Verification)
 [안내] 아래 대괄호 [ ] 부분에 캡처한 사진을 삽입해 주세요.
 
-[사진 삽입 1] 터미널에서 python --version을 입력하여 파이썬 버전이 정상적으로 출력되는 화면
-[사진 삽입 2] 터미널에서 python main.py를 실행하여 퀴즈 게임이 정상적으로 작동하는 화면
+<img width="3840" height="2160" alt="스크린샷(3)" src="https://github.com/user-attachments/assets/1c5c17ba-4dc7-49a9-83d9-236c2c8552c0" />
+
 3. 트러블슈팅 (Troubleshooting)
 🔴 Case 1: 터미널에서 파이썬 명령어 인식 불가 오류
 
