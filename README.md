@@ -1,12 +1,17 @@
 📋 [보고서] 퀴즈 게임 개발 및 실행 환경 구축 결과
 1. 개발 및 실행 환경 (Environment)
+
 OS: Windows
+
 Docker version: 29.9.2-2
+
 Git: 2.56.0.windows.4
+
 Python:2026.10
+
 IDE: Visual Studio Code
+
 2. 환경 설정 검증 (Verification)
-[안내] 아래 대괄호 [ ] 부분에 캡처한 사진을 삽입해 주세요.
 
 <img width="3840" height="2160" alt="스크린샷(3)" src="https://github.com/user-attachments/assets/1c5c17ba-4dc7-49a9-83d9-236c2c8552c0" />
 
